@@ -1,0 +1,176 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+ }
+ 
+ body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+ }
+ 
+ .container {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ 
+ /* Header */
+ header {
+    text-align: center;
+    margin-bottom: 20px;
+ }
+ 
+ .logo {
+    width: 80px;
+    height: auto;
+ }
+ 
+ h1 {
+    font-size: 18px;
+ 
+    color: #1E3A8A;
+    text-transform: uppercase;
+ }
+ 
+ /* Form Styles */
+ form {
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #1E3A8A;
+ }
+ 
+ input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #1E3A8A;
+ }
+ 
+ button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #1E3A8A;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+ }
+ 
+ button:hover {
+    background: #172554;
+ }
+ 
+  
+ .hidden {
+    display: none;
+ }
+ 
+ /* Footer */
+ footer {
+    text-align: center;
+ 
+    margin-top: 20px;
+    font-size: 14px;
+    color: #1E3A8A;
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 16px;
+    }
+ }
+
+ .mark{
+   background-color: #ffffff;
+   color: #172554;
+   font-family: "Roboto", sans-serif;
+   font-weight: bold;
+   font-size: larger;
+   box-shadow: 10px solid white;
+ }
+
+
+
+
+ #successMessage {
+   position: fixed;
+   top: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: #28a745;
+   color: white;
+   padding: 10px 20px;
+   font-size: 14px;
+   font-weight: 500;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+   z-index: 1000000;
+   animation: slideDown 0.5s ease, fadeOut 4s 1s ease forwards;
+   max-width: 90%;
+   width: fit-content;
+   text-align: center;
+ }
+ 
+ @keyframes slideDown {
+   from {
+     opacity: 0;
+     transform: translateX(-50%) translateY(-20px);
+   }
+   to {
+     opacity: 1;
+     transform: translateX(-50%) translateY(0);
+   }
+ }
+ 
+ @keyframes fadeOut {
+   0%, 80% {
+     opacity: 1;
+   }
+   100% {
+     opacity: 0;
+     visibility: hidden;
+   }
+ }
+ 
+ 
+ footer{
+   font-size: 14px;
+   color: #1E3A8A;
+   font-family: Arial, sans-serif;
+ }
+
+ @media only screen and (max-width: 768px) {
+   .container {
+       padding: 15px;
+   }
+   .search-bar input, .search-bar button {
+       width: 100%;
+   }
+}
+
+
+ 
